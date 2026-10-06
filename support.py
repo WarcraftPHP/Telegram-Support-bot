@@ -5,7 +5,7 @@ import openpyxl
 import os
 API_TOKEN = 'BOT_TOKEN' # Токен от бота
 bot = telebot.TeleBot(API_TOKEN) # Бот использует константу ввиде токена от бота
-ADMINS_FILE = r'path/to/excel.xlsx' # Путь к файлу Excel
+ADMINS_FILE = r'path/to/excel.xls' # Путь к файлу Excel
 
 def load_admins_from_xl(): # Загружает список администраторов из файла Excel
     if not os.path.exists(ADMINS_FILE):
